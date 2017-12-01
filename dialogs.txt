@@ -1,6 +1,19 @@
+Welcome
+=======
+(No weight recorded for today)
+U: Open my Weight Tracker
+A: Hello, you haven't recorded today's weight. Would you like to?
+
+(Weight recorded for today)
+U: Open my Weight Tracker
+A: Hello, what can I do for you?
+
 Recording
 =========
 Happy Path
+U: Record today's weight as 160 pounds and close
+A: Okay; recorded 160. Talk to you tomorrow!
+
 U: Today's weight is 160 pounds
 A: Okay; recorded 160 pounds
 
@@ -72,3 +85,16 @@ you have lost 30 pounds.
 
 U: What has my weight been like over the past 7 days?
 A: Over the past 7 days, you weight has trended downward at 0.2 pounds per day
+
+Repairing
+=========
+U: Order me a pizza
+A: I can only track your weight. Would you like to record today's weight?
+
+U: Order me a pizza
+A: I can only track your weight. Would you like to know today's weight?
+
+Exit
+====
+U: Okay, that's it for now
+A: Talk to you later!
