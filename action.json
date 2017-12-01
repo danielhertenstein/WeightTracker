@@ -1,0 +1,62 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to weight tracker"
+          ]
+        }
+      },
+      "fulfillment": {
+        "conversationName": "weight-tracker"
+      }
+    },
+    {
+      "name": "RECORD",
+      "intent": {
+        "name": "com.danielhertenstein.weighttracker.RECORD",
+        "parameters": [
+          {
+            "name": "weight",
+            "type": "SchemaOrg_Number"
+          },
+          {
+            "name": "units",
+            "type": "$WeightUnits"
+          }
+        ]
+      }
+    }
+  ],
+  "conversations": {
+    "weight-tracker": {
+      "name": "weight-tracker",
+      "url": "<INSERT YOUR FULFILLMENT URL HERE>"
+    }
+  },
+  "locale": "en-US",
+  "customTypes": [
+    {
+      "name": "$WeightUnits",
+      "items": [
+        {
+          "key": "pounds",
+          "synonyms": [
+            "lbs"
+          ]
+        },
+        {
+          "key": "kilograms",
+          "synonyms": [
+            "kgs",
+            "kilos"
+          ]
+        }
+      ]
+    }
+  ]
+}
