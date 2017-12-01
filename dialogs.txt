@@ -1,6 +1,7 @@
 Recording
 =========
-U: Record today's weight: 160 pounds
+Happy Path
+U: Today's weight is 160 pounds
 A: Okay; recorded 160 pounds
 
 U: My weight today is 160 pounds
@@ -9,6 +10,7 @@ A: Okay, I recorded today's weight as 160 pounds
 U: Today, I weight 160 pounds
 A: Okay, I recorded today's weight as 160 pounds
 
+Unit not specified
 U: Today's weight is 160
 A: What's the unit? Pounds?
 U: Yup
@@ -21,6 +23,7 @@ A: Can you tell me what unit to use?
 U: Kilograms
 A: Okay, I recorded today's weight as 160 kilograms
 
+Unit not recognized
 U: Today's weight is 160
 A: What's the unit? Pounds?
 U: No, baseballs
@@ -29,13 +32,43 @@ U: Oh, pounds, I guess.
 
 Recalling
 =========
+Happy Path
 U: What was my weight yesterday?
 A: Yesterday, you weighed 160 pounds
 
 U: How much did I weigh yesterday?
 A: Yesterday, you weighed 160 pounds
 
+U: What was my weight today?
+A: Today, you weight 160 pounds
+
+U: How much did I weigh on October 3rd, 2017
+A: On October 3rd, 2017, you weighed 160 pounds
+
+No date given
+U: What was my weight?
+A: Yesterday?
+U: Yes
+A: Yesterday, you weight 160 pounds
+
+U: What was my weight?
+A: Yesterday?
+U: No, last week
+A: Last [day of the week] you weighed 160 pounds
+
+No data for the date
+U: What was my weight today?
+A: You haven't weighed yourself today
+
 Trends
 ======
+U: How has my weight been trending?
+A: Over the past 7 days, you have lost 1.4 pounds, averaging a loss of 0.2 pounds per day. Over the past 30 days,
+you have lost 30 pounds.
+
+U: How is my weight doing?
+A: Over the past 7 days, you have lost 1.4 pounds, averaging a loss of 0.2 pounds per day. Over the past 30 days,
+you have lost 30 pounds.
+
 U: What has my weight been like over the past 7 days?
 A: Over the past 7 days, you weight has trended downward at 0.2 pounds per day
