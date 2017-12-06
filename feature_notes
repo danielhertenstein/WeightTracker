@@ -1,3 +1,6 @@
 * Use helper to get permission to use the person's name (Conversations -> Helpers)
 * Use helper to login to the user account (Conversations -> Helpers)
 * Use dynamic reprompts (Conversations -> Reprompts)
+* Provide responses for generic help requests (Conversations -> Best Practices)
+* Consider using Firebase Realtime DB for storing weights (Fulfillment -> Firebase Services)
+* Use google account linking (Identity -> Implementing Account Linking)
